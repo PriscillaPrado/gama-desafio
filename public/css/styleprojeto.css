@@ -6,7 +6,7 @@
     color: #006d77;
 }
 body{
-    /* background: url(./imagens/user.jpg) no-repeat center center fixed;    */
+    background: url(/img/pattern.png) repeat ;
     max-height: 100vh;
 }
 header {
@@ -16,21 +16,21 @@ header {
     background-color: rgba(237, 246, 249,.5);
     transition: all 0.2s ease-in-out;
 }
-
-.home {
     
+main {
+    border: solid #ffddd2 ;
 }
 
 .container {
-    max-width:50%;
-    border: solid #ffddd2 ;
+    max-width:80%;
     padding: 20px;
     background-color: #edf6f9;
     font-weight: 400;
     display: flex;
     flex-wrap: wrap;
     height:90%;  
-    margin: auto 2% auto auto;  
+    margin: 0 auto;  
+    margin-top: 2%;
 }
 
 form {
@@ -39,28 +39,23 @@ form {
 }
 .main-form-name {
     display: flex;
-    margin: 5px auto;    
-    border: solid 1px;  
+    margin: 5px auto;  
     flex-basis: 100%; 
     
 }
-
 .main-form-line {
     display: flex;
-    margin: 5px auto;    
-    border: solid 1px;  
-    flex-basis: 50%;   
+    margin: 5px auto;     
+    flex-basis: 20%;   
     flex-wrap: wrap;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 .main-form-cep {
     display: flex;
     margin: 5px auto;    
-    border: solid 1px;  
     flex-basis: 100%; 
     width: 500%;
 }
-
 
 span {
     color: #c1121f;
@@ -81,6 +76,7 @@ input, select {
 
 a {
     cursor:pointer;
+    text-decoration: none;
 }
 label {
     font-size: 15px;
@@ -116,6 +112,10 @@ button:hover {
 .container .name h3 {
     font-size: 20px;  
 }
+#home {
+    color: #edf6f9;
+    
+    }
 
 @media only screen and (max-width: 768px) {
     .container {
