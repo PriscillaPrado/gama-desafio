@@ -13,21 +13,24 @@
                             <div class="main-form-name">
                                 <label for="inputname">Nome: <span class="required">*</span></label>
                                 <input
-                                    type="text" id="inputname" name="inputname" placeholder="Seu Nome" autocomplete="off" required/>
+                                    type="text" id="inputname" name="inputname" placeholder="Seu Nome" required/>
                             </div>
                             <div class="main-form-line">
                                 <label for="inputPosition">Cargo Pretendido: <span class="required">*</span> </label>
                                 <input
-                                    type="text" id="inputposition" name="inputposition" placeholder="Cargo Desejado" autocomplete="off" spellcheck="false" autocorrect="off" />
+                                    type="text" id="inputposition" name="inputposition" placeholder="Cargo Desejado" spellcheck="false" autocorrect="off" required/>
                             </div>
                             <div class="main-form-line">
-                                <label for="selectSexo">Sexo: </label>
+                                <label for="selectSexo">Sexo: <span class="required">*</span></label>
                                 <select id="selectsexo" name="selectsexo">
                                     <option value="" disabled selected> Selecione o Sexo</option>
-                                    <option value="0">Feminino</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Outros</option>
-                                    <option value="3">Prefiro Não Informar</option>                                
+                                    <option value="0">Feminino Cis</option>
+                                    <option value="1">Masculino Cis</option>
+                                    <option value="2">Feminino Trans</option>
+                                    <option value="3">Masculino Trans</option>
+                                    <option value="4">Não Binário</option>
+                                    <option value="5">Outros</option>
+                                    <option value="6">Prefiro Não Informar</option>                                
                                 </select>
                             </div>
                             <div class="main-form-line">
@@ -35,7 +38,7 @@
                                 <input id="inputborn" type="date" required name="inputborn">
                             </div>
                             <div class="main-form-line">
-                                <label for="selectEstadoCivil">Estado Civil: </label>
+                                <label for="selectEstadoCivil">Estado Civil: <span class="required">*</span></label>
                                 <select id="selectestadocivil" name="selectestadocivil" >
                                     <option value="" disabled selected> Selecione o Estado Civil</option>
                                     <option value="0">Solteiro</option>
@@ -52,23 +55,23 @@
                             <div class="main-form-line">
                                 <label for="inputPhone">Celular: <span class="required">*</span></label>
                                 <input
-                                    type="number" id="inputphone" name="inputphone" placeholder="Seu Celular" maxlength="15" autocomplete="off" required/>
+                                    type="number" id="inputphone" name="inputphone" placeholder="Seu Celular" maxlength="15" required/>
                             </div>
                             <div class="main-form-line">
                                 <label for="inputphone">Residencial: </label>
                                 <input
-                                    type="number" id="inputphone2" name="inputphone2" placeholder="Seu Nº Residencial " maxlength="15" autocomplete="off" />
+                                    type="number" id="inputphone2" name="inputphone2" placeholder="Seu Nº Residencial " maxlength="15" />
                             </div>
                             <div class="main-form-line">
                                 <label for="inputphone">Recados: </label>
                                 <input
-                                    type="number" id="inputphone3" name="inputphone3" placeholder="Nº Recados" maxlength="15" autocomplete="off" />
+                                    type="number" id="inputphone3" name="inputphone3" placeholder="Nº Recados" maxlength="15" />
                             </div>
                                 
                             <div class="main-form-line">
                                 <label for="inputEmail">E-mail: <span class="required">*</span></label>
                                 <input
-                                    type="email" id="inputemail" name="inputemail" placeholder="seunome@exemplo.com" autocomplete="off" required/>
+                                    type="email" id="inputemail" name="inputemail" placeholder="seunome@exemplo.com" required/>
                             </div>
 
                             <div class="name"><h3>Endereço:</h3></div>
@@ -106,12 +109,12 @@
                             <div class="main-form-line">
                                 <label for="inputRG">RG: <span class="required">*</span> </label>
                                 <input
-                                type="text" id="inputrg" name="inputrg" placeholder="Seu RG" autocomplete="off" required/>
+                                type="text" id="inputrg" name="inputrg" placeholder="Seu RG" required/>
                             </div>
                             <div class="main-form-line">
                                 <label for="inputCPF">CPF: <span class="required">*</span> </label>
                                 <input
-                                type="text" id="inputcpf" cpf-mask="000.000.000-00" name="inputcpf" placeholder="Ex.: 000.000.000-00" autocomplete="off" required/>
+                                type="text" id="inputcpf" name="inputcpf" placeholder="Ex.: 000.000.000-00" required/>
                             </div>
                             <div class="main-form-line">
                                 <label for="selectHab">Habilitação: </label>
