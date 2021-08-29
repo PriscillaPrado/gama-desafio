@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #006d77;
+}
+body{
+    /* background: url(./imagens/user.jpg) no-repeat center center fixed;    */
+    max-height: 100vh;
+}
+header {
+    display: flex;
+    box-shadow: 1px 1px 10px 1px rgba(237, 246, 249);
+    margin-bottom: 45px;
+    background-color: rgba(237, 246, 249,.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.home {
+    
+}
+
+.container {
+    max-width:50%;
+    border: solid #ffddd2 ;
+    padding: 20px;
+    background-color: #edf6f9;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    height:90%;  
+    margin: auto 2% auto auto;  
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-form-name {
+    display: flex;
+    margin: 5px auto;    
+    border: solid 1px;  
+    flex-basis: 100%; 
+    
+}
+
+.main-form-line {
+    display: flex;
+    margin: 5px auto;    
+    border: solid 1px;  
+    flex-basis: 50%;   
+    flex-wrap: wrap;
+    flex-grow: 3;
+}
+.main-form-cep {
+    display: flex;
+    margin: 5px auto;    
+    border: solid 1px;  
+    flex-basis: 100%; 
+    width: 500%;
+}
+
+
+span {
+    color: #c1121f;
+    font-weight: 600;
+}
+input, select {
+    padding: 5px 5px;
+    border-color: #ffddd2;
+    border-radius: 5px ;
+    display:inline-block;
+    background-clip:padding-box;
+    background:#fff;
+    height:28px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    }
+
+a {
+    cursor:pointer;
+}
+label {
+    font-size: 15px;
+    padding: 5px;
+}
+button {
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(to right, #e29578 50%,#006d77 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #edf6f9;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-out;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover {
+    background-position: left bottom;
+    color: white;
+}
+.container .name {
+    display:flex;
+    flex-basis: 100%;
+    width:100%;
+    padding: 5px;
+}
+.container .name h2 {
+    font-size: 25px; 
+}
+.container .name h3 {
+    font-size: 20px;  
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    label {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+@media only screen and (max-width: 480px) {
+    .container .name h2 {
+        font-size: 20px;
+    }
+    .container .name h3 {
+        font-size: 15px;
+    }
+    input, select {
+        height:23px;
+        font-size: 60%;
+    }
+}}
+    
