@@ -22,7 +22,8 @@ const path = require ("path")
     app.set('views', path.join(__dirname, 'views'));
     //Mongoose
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb+srv://PriscillaPrado:RVhopaz9hBZZbF7M@cluster0.rjljt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true}).then(() => {
+    mongoose.connect('mongodb+srv://PriscillaPrado:RVhopaz9hBZZbF7M@cluster0.rjljt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+        useNewUrlParser: true,}).then(() => {
         console.log("Conectado ao Mongo")
     }).catch((err) => {
         console.log("Erro ao se conectar" + err)
