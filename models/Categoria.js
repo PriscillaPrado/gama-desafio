@@ -28,11 +28,11 @@ const CadastSchema = new Schema({
     },
     inputphone2: {
         type: Number,
-        required: false
+        
     },
     inputphone3: {
         type: Number,
-        required: false
+        
     },
     inputemail: {
         type: String,
@@ -53,7 +53,7 @@ const CadastSchema = new Schema({
     },
     complemento: {
         type: String,
-        required: false
+        
     },
     bairro: {
         type: String,
@@ -78,11 +78,11 @@ const CadastSchema = new Schema({
     },
     selecthab: {
         type: String,
-        required: false
+        
     },
     selectveic: {
         type: String,
-        required: false
+        
     },
 
 }, {

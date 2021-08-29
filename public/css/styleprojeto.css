@@ -9,20 +9,97 @@ body{
     background: url(/img/pattern.png) repeat ;
     max-height: 100vh;
 }
-header {
-    display: flex;
-    box-shadow: 1px 1px 10px 1px rgba(237, 246, 249);
-    margin-bottom: 45px;
-    background-color: rgba(237, 246, 249,.5);
-    transition: all 0.2s ease-in-out;
+
+
+.home {
+    background-color: #edf6f9;
+    color: #edf6f9;
+    padding: 20px;
+    max-width:50%;
+    margin: 0 auto;  
+    margin-top: 2%;
+    border: solid #ffddd2;
+    font-weight: 400;
+    }
+
+.home h1 {
+    padding: 20px;
 }
-    
-main {
-    border: solid #ffddd2 ;
+.home img {
+    max-width:80%;
+    height:auto;
 }
 
-.container {
+.final {
+    background-color: #edf6f9;
+    color: #edf6f9;
+    padding: 20px;
+    max-width:50%;
+    margin: 0 auto;  
+    margin-top: 2%;
+    border: solid #ffddd2;
+    text-align: center;
+    }
+
+.final h1 {
+    padding: 20px;
+    }
+
+.final img {
     max-width:80%;
+    height:auto;
+    margin-top: 2%;
+    margin-bottom: -15%;
+}
+.navbar {
+    display: flex;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px white;
+    margin-bottom: 45px;
+    background: rgba(237, 246, 249, 0.85);
+    transition: all 0.2s ease-in-out;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.logojob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkcontato{
+    justify-content: right;
+    padding: 20px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+.navbar ul li {
+    padding: 5px;
+    border-right: 1px dashed white;
+}
+.navbar ul li:first-child {
+    border-left: 1px dashed white;
+}
+.navbar ul li a {
+    transition: 300ms;
+}
+.navbar ul li a:hover {
+    color:#e29578;
+}
+.navbar p {
+    margin: 0 auto;
+    display:flex;
+    align-self: center;
+    margin-right: 20%;
+
+}
+
+form {
+    max-width:60%;
     padding: 20px;
     background-color: #edf6f9;
     font-weight: 400;
@@ -31,24 +108,23 @@ main {
     height:90%;  
     margin: 0 auto;  
     margin-top: 2%;
+    border: solid #ffddd2;
+    
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
 .main-form-name {
     display: flex;
     margin: 5px auto;  
     flex-basis: 100%; 
+    text-align: center;
+    align-items: center;
     
 }
 .main-form-line {
     display: flex;
     margin: 5px auto;     
-    flex-basis: 20%;   
+    flex-basis: 25%;   
     flex-wrap: wrap;
-    flex-grow: 1;
 }
 .main-form-cep {
     display: flex;
@@ -72,6 +148,8 @@ input, select {
     flex-wrap: wrap;
     display: flex;
     margin: 5px;
+    text-align: center;
+    align-items: center;
     }
 
 a {
@@ -85,7 +163,7 @@ label {
 button {
     width: 100%;
     padding: 5px;
-    background: linear-gradient(to right, #e29578 50%,#006d77 50%);
+    background: linear-gradient(to right, #006d77 50%,#e29578 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     color: #edf6f9;
@@ -98,7 +176,7 @@ button {
 }
 button:hover {
     background-position: left bottom;
-    color: white;
+    color: #edf6f9;
 }
 .container .name {
     display:flex;
@@ -112,10 +190,11 @@ button:hover {
 .container .name h3 {
     font-size: 20px;  
 }
-#home {
-    color: #edf6f9;
-    
-    }
+.container .name input {
+    flex-wrap: wrap;
+    display: flex;
+    width:100%;
+}
 
 @media only screen and (max-width: 768px) {
     .container {

@@ -114,7 +114,7 @@
                             <div class="main-form-line">
                                 <label for="inputCPF">CPF: <span class="required">*</span> </label>
                                 <input
-                                type="text" id="inputcpf" name="inputcpf" placeholder="Ex.: 000.000.000-00" required/>
+                                type="text" id="inputcpf" oninput="validaCPF()" name="inputcpf" placeholder="Ex.: 000.000.000-00" required/>
                             </div>
                             <div class="main-form-line">
                                 <label for="selectHab">Habilitação: </label>
@@ -133,7 +133,8 @@
                                     <option value="0">Sim</option>
                                     <option value="1">Não</option>
                                 </select>
-                            </div> <br>
+                            </div> 
+                            
                             <button class="botao" type="submit" onsubmit="">Concluído</button>
                            
                               
