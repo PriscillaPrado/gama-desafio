@@ -1,1 +1,167 @@
-{}
+{"openapi": "3.0.0",
+    "info": {
+      "title": "API para Cadastro de Currículo",
+      "description": "Desafio proposto pela Gama Academy durante o Start Tech para o desenvolvimento de uma API de Cadastro de Currículos para a empresa Jobs.NET",
+      "contact": {
+        "email": "priscillafprado@gmail.com"
+      },
+      "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+          "url": "http://localhost:8081",
+          "description": "Ambiente de Desenvolvimento"
+        }
+      ],
+
+    "paths": {
+        "/": {
+          "get": {
+            "summary": "Pagina Da Home",
+            "description": "Rota responsável por levar da home de apresentação index até o formulário de cadastro"
+          }
+        },
+          
+    "/formulario": {
+            "get": {
+              "summary": "Pagina Do Formulário",
+              "description": "Rota responsável por levar até a pagina do formulário de cadastro"
+            }
+          },
+
+    "/final": {
+            "get": {
+              "summary": "Pagina De Confirmação e Agradecimento",
+              "description": "Rota de redirecionamento após o envio das informações para o banco de dados "
+            }
+          },
+
+    "/register": {
+          "post": {
+            "summary": "Cadastro do Candidato na Database",
+            "description": "Rota de cadastro de usuário, recebe: nome, cargo desejado, sexo, data de nascimento, estado civil, 3 telefones com 1 obrigatorio, e-mail, api de cep para requisitar o endereco, rg, cpf, habilitacao, veiculo",
+            "tags": ["Candidate"],
+            "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "properties": {
+                        "inputname": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "inputposition": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "selectsexo": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "inputborn": {
+                            "type": "Date",
+                            "required": true
+                        },
+                        "selectestadocivil": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "inputphone": {
+                            "type": "Number",
+                            "required": true
+                        },
+                        "inputphone2": {
+                            "type": "Number",
+                            "required": false
+                        },
+                        "inputphone3": {
+                            "type": "Number",
+                            "required": false
+                        },
+                        "inputemail": {
+                            "type": "String",
+                            "required": true,
+                            "unique": true
+                        },
+                        "cep": {
+                            "type": "Number",
+                            "required": true
+                        },
+                        "rua": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "numero": {
+                            "type": "Number",
+                            "required": true
+                        },
+                        "complemento": {
+                            "type": "String",
+                            "required": false
+                        },
+                        "bairro": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "cidade": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "uf": {
+                            "type": "String",
+                            "required": true
+                        },
+                        "inputrg": {
+                            "type": "Number",
+                            "required": true
+                        },
+                        "inputcpf": {
+                            "type": "Number",
+                            "required": true,
+                            "unique": true
+                        },
+                        "selecthab": {
+                            "type": "String",
+                            "required": false
+                        },
+                        "selectveic": {
+                            "type": "String",
+                            "required": false
+                        }
+                    },
+                    "examples": {
+                        "cadastro": {
+                          "value": {
+                            "_id": "1",
+                            "inputname": "Priscilla Prado",
+                            "inputposition": "Dev Full Stack",
+                            "selectsexo": "Feminino Cis",
+                            "inputborn": "1990/01/11",
+                            "selectestadocivil": "Solteiro(a)",
+                            "inputphone": "11967084450",
+                            "inputphone2": "11999999999",
+                            "inputphone3": "11999999998",
+                            "inputemail": "priscillafprado@gmail.com",
+                            "cep": "00000-000",
+                            "rua": "Rua Alguma Coisa",
+                            "numero": "123",
+                            "complemento": "ap 123",
+                            "bairro": "Jardim Lalala",
+                            "cidade": "São Paulo",
+                            "uf": "SP",
+                            "inputrg": "000000000",
+                            "inputcpf": "00000000000",
+                            "selecthab": "Não",
+                            "selectveic": "Não"                           
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            }
+        }   
+    }
+    }
+}
