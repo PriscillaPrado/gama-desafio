@@ -46,98 +46,94 @@
                 "content": {
                   "application/json": {
                     "schema": {
+                        "$ref": "#/components/schemas/Categoria"
+                      },
                       "properties": {
                         "inputname": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "inputposition": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "selectsexo": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "inputborn": {
-                            "type": "Date",
+                            "type": "date",
                             "required": true
                         },
                         "selectestadocivil": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "inputphone": {
-                            "type": "Number",
+                            "type": "number",
                             "required": true
                         },
                         "inputphone2": {
-                            "type": "Number",
-                            "required": false
+                            "type": "number"
                         },
                         "inputphone3": {
-                            "type": "Number",
-                            "required": false
+                            "type": "number"  
                         },
                         "inputemail": {
-                            "type": "String",
+                            "type": "string",
                             "required": true,
                             "unique": true
                         },
                         "cep": {
-                            "type": "Number",
+                            "type": "number",
                             "required": true
                         },
                         "rua": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "numero": {
-                            "type": "Number",
+                            "type": "number",
                             "required": true
                         },
                         "complemento": {
-                            "type": "String",
-                            "required": false
+                            "type": "string" 
                         },
                         "bairro": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "cidade": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "uf": {
-                            "type": "String",
+                            "type": "string",
                             "required": true
                         },
                         "inputrg": {
-                            "type": "Number",
+                            "type": "number",
                             "required": true
                         },
                         "inputcpf": {
-                            "type": "Number",
+                            "type": "number",
                             "required": true,
                             "unique": true
                         },
                         "selecthab": {
-                            "type": "String",
-                            "required": false
+                            "type": "string"
                         },
                         "selectveic": {
-                            "type": "String",
-                            "required": false
+                            "type": "string"
                         }
                     },
                     "examples": {
                         "cadastro": {
-                          "value": {
-                            "_id": "1",
+                          "value": {                        
                             "inputname": "Priscilla Prado",
                             "inputposition": "Dev Full Stack",
                             "selectsexo": "Feminino Cis",
-                            "inputborn": "1990/01/11",
+                            "inputborn": "11/01/1990",
                             "selectestadocivil": "Solteiro(a)",
                             "inputphone": "11967084450",
                             "inputphone2": "11999999999",
@@ -163,5 +159,5 @@
             }
         }   
     }
-    }
 }
+
