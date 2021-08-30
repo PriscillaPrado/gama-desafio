@@ -9,6 +9,7 @@ const swaggerUI = require("swagger-ui-express")
 const swaggerDocs = require('./swagger.json');
 const path = require ("path")
 
+
 //Configs
     
     app.use('/docs-api', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
@@ -36,7 +37,7 @@ const path = require ("path")
     app.use(routes)
 
 //Outros
-const PORT = 8081
+const PORT = process.env.PORT || 8089
 app.listen(PORT,() => {
-    console.log("servidor rodando na porta http://localhost:8081")
+    console.log("servidor rodando na porta http://localhost:8089")
 })
